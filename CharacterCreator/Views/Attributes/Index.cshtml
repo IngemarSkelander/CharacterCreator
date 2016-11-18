@@ -1,0 +1,34 @@
+﻿@model CharacterCreator.Models.AttributesViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Attributes</title>
+</head>
+<body>
+    <div>
+        <h2>Decision 1 - Attributes</h2>
+        @using (Html.BeginForm("Create", "Attributes", FormMethod.Post))
+        {
+            
+            <p>Agility @Html.TextBoxFor(x => x.Agility)</p>
+            <p>Awareness @Html.TextBoxFor(x => x.Awareness)</p>
+            <p>Coordination @Html.TextBoxFor(x => x.Coordination)</p>
+            <p>Intelligence @Html.TextBoxFor(x => x.Intelligence)</p>
+            <p>Mental Strength @Html.TextBoxFor(x => x.Mental)</p>
+            <p>Personality @Html.TextBoxFor(x => x.Personality)</p>
+            <p>Physique @Html.TextBoxFor(x => x.Physique)</p>
+            <p>Strength @Html.TextBoxFor(x => x.Strength)</p>
+
+            <input type="submit" value="Next" />
+        }
+        
+    </div>
+</body>
+</html>

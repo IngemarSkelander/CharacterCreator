@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterCreator", "CharacterCreator\CharacterCreator.csproj", "{B94D309D-13FA-4E79-B551-7A26A08949C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterCreator.Tests", "CharacterCreator.Tests\CharacterCreator.Tests.csproj", "{D2EA08EB-0989-42E6-90A2-DF4E2453F090}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B94D309D-13FA-4E79-B551-7A26A08949C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94D309D-13FA-4E79-B551-7A26A08949C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94D309D-13FA-4E79-B551-7A26A08949C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94D309D-13FA-4E79-B551-7A26A08949C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2EA08EB-0989-42E6-90A2-DF4E2453F090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2EA08EB-0989-42E6-90A2-DF4E2453F090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2EA08EB-0989-42E6-90A2-DF4E2453F090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2EA08EB-0989-42E6-90A2-DF4E2453F090}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
