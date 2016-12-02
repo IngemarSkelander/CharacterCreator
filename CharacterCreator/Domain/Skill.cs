@@ -10,6 +10,5 @@ namespace CharacterCreator.Domain
         public string Name { get; set; }
         public int Expertise { get; set; }
         public int Focus { get; set; }
-
     }
 }

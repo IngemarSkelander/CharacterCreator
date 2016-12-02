@@ -24,5 +24,10 @@ namespace CharacterCreator.Controllers
 
             return View(model);
         }
+
+        public ViewResult Create(AttributesViewModel model)
+        {
+            return View();
+        }
     }
 }

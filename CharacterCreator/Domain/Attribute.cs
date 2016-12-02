@@ -10,6 +10,5 @@ namespace CharacterCreator.Domain
         public string Name { get; set; }
         public int Value { get; set; }
         public IEnumerable<Skill> Skills { get; set;}
-
     }
 }

@@ -9,6 +9,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
     <title>Attributes</title>
 </head>
 <body>
@@ -16,19 +17,92 @@
         <h2>Decision 1 - Attributes</h2>
         @using (Html.BeginForm("Create", "Attributes", FormMethod.Post))
         {
-            
-            <p>Agility @Html.TextBoxFor(x => x.Agility)</p>
-            <p>Awareness @Html.TextBoxFor(x => x.Awareness)</p>
-            <p>Coordination @Html.TextBoxFor(x => x.Coordination)</p>
-            <p>Intelligence @Html.TextBoxFor(x => x.Intelligence)</p>
-            <p>Mental Strength @Html.TextBoxFor(x => x.Mental)</p>
-            <p>Personality @Html.TextBoxFor(x => x.Personality)</p>
-            <p>Physique @Html.TextBoxFor(x => x.Physique)</p>
-            <p>Strength @Html.TextBoxFor(x => x.Strength)</p>
+            <table>
+                <tr>
+                    <td>
+                        Agility
+                        <input type="button" class="sub" id="sub" value="-" />
+                        @Html.TextBoxFor(x => x.Agility)
+                        <input type="button" class="add" id="add" value="+" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Awareness
+                        <input type="button" class="sub" id="sub" value="-" />
+                        @Html.TextBoxFor(x => x.Awareness)
+                        <input type="button" class="add" id="add" value="+" />
+                    </td>
+                </tr>
 
-            <input type="submit" value="Next" />
+                <tr>
+                    <td>
+                        Coordination
+                        <input type="button" class="sub" id="sub" value="-" />
+                        @Html.TextBoxFor(x => x.Coordination)
+                        <input type="button" class="add" id="add" value="+" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Intelligence
+                        <input type="button" class="sub" id="sub" value="-" />
+                        @Html.TextBoxFor(x => x.Intelligence)
+                        <input type="button" class="add" id="add" value="+" />
+                    </td>
+                </tr>
+                    
+                <tr>
+                    <td>
+                        Mental Strength
+                        <input type="button" class="sub" id="sub" value="-" />
+                        @Html.TextBoxFor(x => x.Mental)
+                        <input type="button" class="add" id="add" value="+" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Personality
+                        <input type="button" class="sub" id="sub" value="-" />
+                        @Html.TextBoxFor(x => x.Personality)
+                        <input type="button" class="add" id="add" value="+" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Physique
+                        <input type="button" class="sub" id="sub" value="-" />
+                        @Html.TextBoxFor(x => x.Physique)
+                        <input type="button" class="add" id="add" value="+" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Strength
+                        <input type="button" class="sub" id="sub" value="-" />
+                        @Html.TextBoxFor(x => x.Strength)
+                        <input type="button" class="add" id="add" value="+" />
+                    </td>
+                </tr>
+            </table>
+
+            <input type="submit" value="Next Decision" />
         }
         
     </div>
+    <script type="text/javascript">
+        $('.add').click(function () {
+            if ($(this).prev().val() < 6) {
+                $(this).prev().val(+$(this).prev().val() + 1);
+            }
+            
+        });
+
+        $('.sub').click(function () {
+            if ($(this).next().val() > 4) {
+                $(this).next().val(+$(this).next().val() - 1);
+            }
+        })
+    </script>
 </body>
 </html>
